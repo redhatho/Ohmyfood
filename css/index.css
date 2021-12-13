@@ -1,0 +1,21 @@
+.info-box {
+    display: flex;
+}
+
+body {
+    width: 25%;
+}
+
+
+
+img {
+    object-fit: cover;
+}
+
+.restaurant-img {
+    width: 100%;
+}
+
+.fa-stack-1x {
+    color: white;
+}
