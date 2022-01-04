@@ -15,18 +15,6 @@ body {
 }
 
 
-@media all and (min-width: 512px) {
-    body {
-        background-color: greenyellow;
-    }
-}
-
-@media all and (min-width: 768px) {
-    body {
-        background-color: red;
-    }
-}
-
 /* section 1 : booking */
 
 header {
@@ -231,3 +219,14 @@ footer i {
     padding-right: 6px;
 }
 
+@media all and (min-width: 512px) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+@media all and (min-width: 768px) {
+    body {
+        background-color: red;
+    }
+}
