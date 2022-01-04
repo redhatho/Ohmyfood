@@ -6,6 +6,9 @@
     list-style: none;
 }
 
+a { 
+    color: black; 
+}
 
 body {
     font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
@@ -158,7 +161,7 @@ h2 {
 .background-container {
     background-color: rgb(246, 246, 246);
     margin-top: 45px;
-    padding-top: 35px;
+    padding: 35px 0 45px 0;
 }
 
  .restaurant {
@@ -170,13 +173,27 @@ h2 {
 
 .restaurant-box {
     width: 90%;
-    border: solid 5px red;
     margin-top: 20px;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 1px transparent;
+    box-shadow: 10px 10px 15px #e7e7e7;
 }
 
 .restaurant-img {
     width: 100%;
-    height: 220px;
+    height: 190px;
     object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.4em 1em;
+    font-size: 0.9em;
+}
+
+.icon-box {
+    font-size: 1.3em;
+}
