@@ -6,17 +6,8 @@
     list-style: none;
 }
 
-a { 
-    color: black; 
-}
-
 body {
     font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
-}
-
-
-.fas {
-    color: rgb(126, 126, 126);
 }
 
 .info-box {
@@ -141,6 +132,8 @@ h2 {
 
 .list i {
     padding: 0 18px 0 15px;
+    color: rgb(126, 126, 126);
+
 }
 
 .list-number {
@@ -157,6 +150,10 @@ h2 {
 }
 
  /* Section 3 : Restaurants*/
+
+ section a { 
+    color: black; 
+}
 
 .background-container {
     background-color: rgb(246, 246, 246);
@@ -197,3 +194,40 @@ h2 {
 .icon-box {
     font-size: 1.3em;
 }
+
+footer, footer a {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h2 {
+    font-family: 'Shrikhand', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    padding: 20px 0 10px 20px;
+}
+
+footer ul {
+    padding-bottom : 25px;
+}
+
+footer li {
+    font-size: 0.8em;
+    padding: 6px 0 0 20px;
+}
+
+footer i {
+    font-size: 0.6rem;
+}
+
+.fa-utensils {
+    padding-right: 10px;
+}
+
+.fa-hands-helping {
+    padding-right: 6px;
+}
+
