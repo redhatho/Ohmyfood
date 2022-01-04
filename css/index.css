@@ -6,17 +6,11 @@
     list-style: none;
 }
 
+
 body {
     font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
 }
 
-a {
-    
-}
-
-li {
-    
-}
 
 .fas {
     color: rgb(126, 126, 126);
@@ -25,7 +19,6 @@ li {
 .info-box {
     display: flex;
 }
-
 
 
 @media all and (min-width: 512px) {
@@ -40,19 +33,7 @@ li {
     }
 }
 
-img {
-    object-fit: cover;
-}
-
-.restaurant-img {
-    width: 100%;
-}
-
-.fa-stack-1x {
-    color: white;
-}
-
-/* section 1 */
+/* section 1 : booking */
 
 header {
     display: flex;
@@ -63,6 +44,8 @@ header img {
     width: 50%;
     padding: 0.5em;
 }
+
+
 
 .location-box {
     background-color: #eaeaea;
@@ -98,6 +81,8 @@ h1 {
 .booking-box p {
     color: rgb(77, 77, 77);
     font-size: 1.1em;
+    padding-top: 0.5em;
+    font-weight: 300;
 }
 
 .booking-button {
@@ -122,10 +107,14 @@ h1 {
     transform: scale(0.9);
 }
 
-/* Fonctionnement */
+/* Section 2 : menu */
+
+.menu-container {
+    margin-top: 35px;
+}
 
 h2 {
-    padding-left: 30px;
+    padding-left: 18px;
 }
 
 .list {
@@ -135,13 +124,16 @@ h2 {
 }
 
 .list li {
-    border: solid 1px black;
+    border: 0px solid transparent;
+    box-shadow: 6px 6px 10px #e7e7e7;
+    background-color: #f6f6f6;
     border-radius: 20px;
     height: 60px;
-    width: 90%;
-    margin-bottom: 15px;
+    width: 85%;
+    margin: 15px 0 0 15px;
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 
 .list i {
@@ -152,29 +144,39 @@ h2 {
     border: none;
     background-color: #9356dc;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    font-weight: 300;
     color: white;
     border-radius: 20px;
     height: 1.3em;
     width: 1.3em;
-    margin-left: -10px;
+    margin-left: -8px;
 }
 
- /*Restaurants*/
+ /* Section 3 : Restaurants*/
+
+.background-container {
+    background-color: rgb(246, 246, 246);
+    margin-top: 45px;
+    padding-top: 35px;
+}
 
  .restaurant {
-     background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
  }
 
 
 .restaurant-box {
-    border: solid 1px black;
     width: 90%;
-    background-color: green;
+    border: solid 5px red;
+    margin-top: 20px;
 }
 
 .restaurant-img {
     width: 100%;
-    height: 300px;
+    height: 220px;
     object-fit: cover;
 }
+
