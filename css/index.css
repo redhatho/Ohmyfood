@@ -23,7 +23,7 @@ header {
 }
 
 header img {
-    width: 50%;
+    width: 185px;
     padding: 0.5em;
 }
 
@@ -57,7 +57,7 @@ header img {
 }
 
 h1 {
-    padding: 0 1.5em 0 1.5em;
+    padding-top: 15px;
 }
 
 .booking-box p {
@@ -65,24 +65,21 @@ h1 {
     font-size: 1.1em;
     padding-top: 0.5em;
     font-weight: 300;
+    padding-bottom: 20px;
 }
 
 .booking-button {
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     color: white;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 0.9em;
+    font-weight: 500;
     height: 3.2em;
     padding: 0 1em 0 1em;
-    margin: 10px 0 30px 0;
-}
-
-.booking-button:hover {
-    transition: ease 0.3s;
-    transform: scale(1.1);
+    margin: 10px 0 35px 0;
+    cursor: pointer;
 }
 
 .booking-button:active {
@@ -112,7 +109,7 @@ h2 {
     border-radius: 20px;
     height: 60px;
     width: 85%;
-    margin: 15px 0 0 15px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -226,7 +223,31 @@ footer i {
 }
 
 @media all and (min-width: 768px) {
-    body {
-        background-color: red;
+    .booking-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 1.1em;
+        width: 27%;
+        padding-top: 15px;
+    }
+
+    .booking-box p {
+        font-size: 1em;
+    }
+
+
+    .list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .list li {
+        width: 20%;
     }
 }
