@@ -31,7 +31,6 @@ h1, h2 {
 
 h1 {
     width: 80%;
-
     font-size: 1.5em;
 }
 
@@ -46,10 +45,17 @@ main {
 
 main header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 0.9em;
-    padding: 30px 20px 10px 0;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 25px 20px 0 30px;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+.fa-heart {
+    font-size: 1.5em;
 }
 
 img {
@@ -67,8 +73,16 @@ img {
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding-top: 2px;
+}
+
+h3 {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 92%;
+    font-weight: 400;
+    font-size: 1.1em;
 }
 
 h4 {
@@ -76,11 +90,13 @@ h4 {
 }
 
 .dish-text {
-    border: 1px solid black;
-    box-shadow: 6px 6px 10px #e7e7e7;
+    border: 0px solid transparent;
+    box-shadow: 6px 6px 7px #e7e7e7;
     border-radius: 20px;
-    width: 85%;
+    background-color: rgb(255, 255, 255);
+    width: 92%;
     padding: 10px;
+    margin-top: 15px;
 }
 
 .text-price {
@@ -91,6 +107,27 @@ h4 {
 
 .price {
     font-weight: 500;
+}
+
+/* Bouton*/
+
+.order-box {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+}
+
+.order-button {
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+    width: 170px;
+    height: 3.2em;
+    cursor: pointer;
 }
 
 /* Footer*/
@@ -128,4 +165,21 @@ footer i {
 
 .fa-hands-helping {
     padding-right: 6px;
+}
+
+@media all and (min-width: 512px) {
+    footer {
+        padding-left: 20px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .dish-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 30%;
+    }
 }
