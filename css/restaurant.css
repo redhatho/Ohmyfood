@@ -47,7 +47,7 @@ main header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 25px 20px 0 30px;
+    padding: 25px 20px 0 20px;
 }
 
 h2 {
@@ -66,7 +66,7 @@ img {
 
 /* Les plats */
 
-.dish-box {
+.dish-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -89,7 +89,13 @@ h4 {
     font-weight: 500;
 }
 
-.dish-text {
+h4, p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dish-box {
     border: 0px solid transparent;
     box-shadow: 6px 6px 7px #e7e7e7;
     border-radius: 20px;
@@ -97,16 +103,20 @@ h4 {
     width: 92%;
     padding: 10px;
     margin-top: 15px;
-}
-
-.text-price {
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
+}
+
+.dish-text {
+    width: 87%;
 }
 
 .price {
     font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 5px;
 }
 
 /* Bouton*/
@@ -168,6 +178,10 @@ footer i {
 }
 
 @media all and (min-width: 512px) {
+    main header {
+        padding: 25px 25px 0 30px;
+    }
+    
     footer {
         padding-left: 20px;
     }
