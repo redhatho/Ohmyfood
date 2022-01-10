@@ -159,7 +159,7 @@ h2 {
     margin-top: 20px;
     background-color: white;
     border-radius: 15px;
-    border: solid 1px transparent;
+    border: solid 0px transparent;
     box-shadow: 10px 10px 15px #e7e7e7;
 }
 
