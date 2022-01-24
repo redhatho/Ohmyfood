@@ -113,7 +113,7 @@ h3 {
     font-weight: 400;
     font-size: 1.1em;
     border-bottom: solid 3px; 
-    border-image: linear-gradient(to right, #99e2d0 10%, #f6f6f6 10%) 100% 1;
+    border-image: linear-gradient(to right, #99e2d0 14%, #f6f6f6 14%) 100% 1;
 }
 
 
@@ -319,3 +319,9 @@ footer i {
 #case-9 {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
+}
+
+#case-10 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}

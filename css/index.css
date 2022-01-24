@@ -27,7 +27,7 @@ body {
     left: 0;
     top: 0;
     background-color: rgba(255, 255, 255, 0.9);
-    animation: loader 2.5s;
+    animation: loader 1.6s;
     animation-delay: 2s;
     animation-fill-mode: none;
     animation-fill-mode: both;
@@ -39,7 +39,7 @@ body {
     width: 25px;
     height: 25px;
     position: absolute;
-    background: #e48304;
+    background: #9356DC;
     border-radius: 50%;
     margin: -12.5px;
     -webkit-animation: mesh 3s ease-in-out infinite;
