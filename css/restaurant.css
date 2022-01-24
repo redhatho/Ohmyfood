@@ -101,6 +101,12 @@ img {
     justify-content: space-evenly;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
 p {
     font-size: 0.9em;
     padding-top: 2px;
@@ -170,7 +176,7 @@ h4, p {
 }
 
 .dish-box:hover .confirmation{
- width: 6rem;
+ width: 110px;
 }
 
 .fa-check {
