@@ -14,6 +14,19 @@ h1, h2 {
     font-family: 'Shrikhand', Verdana, Arial, Helvetica, sans-serif;
 }
 
+@keyframes appear {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
+
 /* bannière */
 
 .restaurant-header {
@@ -27,6 +40,7 @@ h1, h2 {
 .restaurant-header i {
     width: 5%;
     font-size: 0.9em;
+    color: black;
 }
 
 h1 {
@@ -54,9 +68,24 @@ h2 {
     font-size: 1.7em;
 }
 
-.fa-heart {
+.icon-box {
+    color: black;
+    cursor: pointer;
+  }
+
+.heart-icon {
     font-size: 1.5em;
 }
+  
+.heart-icon:hover{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+    background: linear-gradient(#9356DC, #FF79DA);
+    background:-webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
+  }
 
 img {
     width: 100%;
@@ -78,21 +107,25 @@ p {
 }
 
 h3 {
-    padding-top: 20px;
+    padding: 20px 0 5px 0;
     margin: 0 auto;
     width: 92%;
     font-weight: 400;
     font-size: 1.1em;
+    border-bottom: solid 3px; 
+    border-image: linear-gradient(to right, #99e2d0 10%, #f6f6f6 10%) 100% 1;
 }
+
+
 
 h4 {
     font-weight: 500;
 }
 
 h4, p {
-    text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+            white-space: nowrap;
+            text-overflow: ellipsis;
 }
 
 .dish-box {
@@ -105,10 +138,16 @@ h4, p {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    animation: appear ease-in-out 0.8s;
+    animation-fill-mode: both;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .dish-text {
-    width: 87%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .price {
@@ -116,7 +155,39 @@ h4, p {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 5px;
+    padding-left: 15px;
+}
+
+.confirmation {
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  width: 0%;
+  transition-property: right, left;
+  transition: width 1s;
+  margin: -10px -30px -10px 20px;
+  padding-left: 14px;
+}
+
+.dish-box:hover .confirmation{
+ width: 6rem;
+}
+
+.fa-check {
+  color: #99e2d0;
+}
+
+.confirmation-icon {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.dish-box:hover .confirmation-icon {
+  transform: rotate(359deg);
+  transition: transform 800ms;
 }
 
 /* Bouton*/
@@ -139,6 +210,13 @@ h4, p {
     height: 3.2em;
     cursor: pointer;
 }
+
+.order-button:hover {
+  opacity: 0.8;
+  transition: ease-in-out 0.5s;
+  box-shadow: .25rem .25rem 20px rgba(0,0,0,1);
+}
+
 
 /* Footer*/
 
@@ -197,3 +275,47 @@ footer i {
         width: 30%;
     }
 }
+
+#case-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#case-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#case-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#case-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#case-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#case-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#case-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+#case-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#case-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
