@@ -31,7 +31,7 @@ body {
     animation-delay: 2s;
     animation-fill-mode: none;
     animation-fill-mode: both;
-    z-index: 20;
+    z-index: 300;
     
 }
 
