@@ -81,9 +81,8 @@ h2 {
     transition: ease-in-out 0.3s;
     opacity: 1;
     background: linear-gradient(#9356DC, #FF79DA);
-    background:-webkit-linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    background-clip: text;
+    color:transparent;
     font-weight: bold;
   }
 
@@ -283,51 +282,41 @@ footer i {
 }
 
 #case-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
 
 #case-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 #case-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 #case-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 #case-5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 #case-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 #case-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 #case-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+    animation-delay: 0.8s;
 }
 
 #case-9 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+    animation-delay: 0.9s;
 }
 
 #case-10 {
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
+    animation-delay: 1s;
 }

@@ -42,12 +42,11 @@ body {
     background: #9356DC;
     border-radius: 50%;
     margin: -12.5px;
-    -webkit-animation: mesh 3s ease-in-out infinite;
-    animation: mesh 3s ease-in-out infinite -1.5s;
+    animation: mesh-1 3s ease-in-out infinite;
+    animation: mesh-2 3s ease-in-out infinite -1.5s;
 }
 
 .mesh-loader > div .circle:last-child {
-    -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
 
@@ -58,7 +57,6 @@ body {
 }
 
 .mesh-loader > div:last-child {
-    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
@@ -69,55 +67,40 @@ body {
       }
 }
 
-@-webkit-keyframes mesh {
+@keyframes mesh-1 {
+    0% {
+              transform-origin: 50% -100%;
+              transform: rotate(0);
+    }
+    50% {
+              transform-origin: 50% -100%;
+              transform: rotate(360deg);
+    }
+    50.00001% {
+              transform-origin: 50% 200%;
+              transform: rotate(0deg);
+    }
+    100% {
+              transform-origin: 50% 200%;
+              transform: rotate(360deg);
+    }
+  }
+
+@keyframes mesh-2 {
   0% {
-    -webkit-transform-origin: 50% -100%;
             transform-origin: 50% -100%;
-    -webkit-transform: rotate(0);
             transform: rotate(0);
   }
   50% {
-    -webkit-transform-origin: 50% -100%;
             transform-origin: 50% -100%;
-    -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
   50.00001% {
-    -webkit-transform-origin: 50% 200%;
             transform-origin: 50% 200%;
-    -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform-origin: 50% 200%;
             transform-origin: 50% 200%;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes mesh {
-  0% {
-    -webkit-transform-origin: 50% -100%;
-            transform-origin: 50% -100%;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  50% {
-    -webkit-transform-origin: 50% -100%;
-            transform-origin: 50% -100%;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  50.00001% {
-    -webkit-transform-origin: 50% 200%;
-            transform-origin: 50% 200%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform-origin: 50% 200%;
-            transform-origin: 50% 200%;
-    -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
@@ -150,7 +133,7 @@ header img {
 .fa-map-marker-alt {
     font-size: 0.7em;
     padding-right: 0.5em;
-    color: rgb(53, 53, 53);
+    color: #353535;
 }
 
 .location-box input {
@@ -162,7 +145,7 @@ header img {
 .booking-box {
     text-align: center;
     padding: 0.7em;
-    background-color: rgb(246, 246, 246);
+    background-color: #f6f6f6;
 }
 
 h1 {
@@ -170,7 +153,7 @@ h1 {
 }
 
 .booking-box p {
-    color: rgb(77, 77, 77);
+    color: #4d4d4d;
     font-size: 1.1em;
     padding-top: 0.5em;
     font-weight: 300;
@@ -323,9 +306,8 @@ h2 {
     transition: ease-in-out 0.3s;
     opacity: 1;
     background: linear-gradient(#9356DC, #FF79DA);
-    background:-webkit-linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    background-clip: text;
+    color:transparent;
     font-weight: bold;
   }
 
