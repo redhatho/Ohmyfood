@@ -229,6 +229,8 @@ h2 {
 
 .list li:hover {
     background-color: rgba(147, 86, 220, 0.2);
+    transition: ease 0.5s;
+    cursor: pointer;
 }
 
 .list i {
